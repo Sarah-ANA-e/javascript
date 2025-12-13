@@ -8,12 +8,90 @@
 <body>
     <h1>les bases de java-script</h1>
     <script>
-      console.log("hello world")  
-      console.info("le sereveur a etais redemarer avec succes")
-      console.info("le sereveur a etais redemarer avec succes")
-      console.error("une erreur cest introduite dans le code")
-      console.warn("attention cette action  peut avoir des consequances imprevue")
-      alert("ceci est une alerte")
+      console.log("hello world");
+      console.info("le sereveur a etais redemarer avec succes");
+      console.info("le sereveur a etais redemarer avec succes");
+      console.error("une erreur cest introduite dans le code");
+      console.warn("attention cette action  peut avoir des consequances imprevue");
+      alert("ceci est une alerte");
+      var name="Sarah";
+      var age=17;
+      const pi=3.14;
+      console.log(name.length);
+      console.log("je mapelle", name,"et jai",age,"ans");
+      console.log("je mapelle"+name+"et jai"+age+"ans");
+      console.log(`ja mapelle${name}et jai ${age}ans`);
+      console.log(pi);
+      const time=new Date().getHours();
+      var greating;
+    //   
+      if(time<10){ 
+        greating='good morning'
+    }else if(time<20){
+        greating='good day'
+    }else{
+        greating="good evening"
+    }
+    console.log(greating);
+    //  exo
+    var module1=5
+    var module2=10
+    var resultat=(module1+module2)/2
+    if( resultat<10){
+        resultat="vous etes pas a jour"
+    }else if(resultat==10){
+        resultat="passable"
+    }else{
+        resultat="Bravo vous avez reussi"
+    }
+    console.log(resultat)
+    // comparaison total et comparaison parsiel
+    var nombre=5
+    if(nombre==5){
+        console.log('comparaison partielle la valeur et egale apres conversion')
+    }else {
+        console.log('comparaaison partielle la valeur est differente')
+    }
+    if(nombre==5){
+        console.log('comparaison total la valeur et le type sont egau')
+    }else{
+        console.log('comparison tatal la valeur ou le type est different')
+    }
+    
+    nombre==5?console.log('comparaison partielle la valeur et egale apres conversion'):console.log('comparaison total la valeur et le type sont egau')
+    // switch case
+    var couleur="rouge"
+   switch (couleur) {
+     case "rouge":
+            console.log("la couleur est rouge");
+            break;
+    case "bleu":
+        console.log('la couleur est bleu');
+    case "vert":
+        console.log('la couleur est vert');
+        break;
+        default:
+            console.log("couleur non reconnue");
+    }   
+    // les fonstions
+    function salutation(){
+        console.log('bonjour tout le monde!');
+    } 
+    salutation();
+    function addition(a,b){
+        return a+b;
+    }
+    console.log(addition(18,9));
+
+    // test
+    function pairImpair(n){
+        if(n%2==0){
+            console.log('le enombre est pair')
+        }else{
+            console.log('le nombre est impair')
+        }
+    }
+      pairImpair(8)
     </script>
 </body>
 </html>
