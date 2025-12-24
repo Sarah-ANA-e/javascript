@@ -1,0 +1,8 @@
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px,auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgb(137, 17, 127);
+    
+}

@@ -17,3 +17,8 @@ function exempleLet(){
        console.log(y, "la valeur de y est a lexterieur de la condition ")
 }
 exempleLet();
+ function exempleConst(){
+    const z =5;
+    console.log(z)
+ }
+ exempleConst();
